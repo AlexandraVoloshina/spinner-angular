@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { LoadingService } from './loading.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'spinner-angular';
+  loading$ = this.loader.loading$;
+
+  constructor(public loader: LoadingService, private http: HttpClient) {
+
+  }
+
+  fetchUser() {
+    this.http.get('https://api.github.com/users/thisiszoaib').subscribe(res => {
+      console.log(res);
+    });
+  }
 }
