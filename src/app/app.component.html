@@ -15,3 +15,44 @@
 </button>
 
 <mat-progress-spinner [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+<br><br>
+<div class="flex">
+  <app-loading-spinner size="small" color="7fcd91"></app-loading-spinner><br><br>
+  <app-loading-spinner size="medium" color="7fcd91"></app-loading-spinner><br><br>
+  <app-loading-spinner size="large" color="7fcd91"></app-loading-spinner><br><br>
+  <app-loading-spinner size="giant" color="7fcd91"></app-loading-spinner><br><br>
+</div>
+<div class="flex">
+  <app-loading-spinner size="small" color="FF06B7"></app-loading-spinner><br><br>
+  <app-loading-spinner size="medium" color="FF06B7"></app-loading-spinner><br><br>
+  <app-loading-spinner size="large" color="FF06B7"></app-loading-spinner><br><br>
+  <app-loading-spinner size="giant" color="FF06B7"></app-loading-spinner><br><br>
+</div>
+<div class="flex">
+  <app-loading-spinner size="small" color="8CC0DE"></app-loading-spinner><br><br>
+  <app-loading-spinner size="medium" color="8CC0DE"></app-loading-spinner><br><br>
+  <app-loading-spinner size="large" color="8CC0DE"></app-loading-spinner><br><br>
+  <app-loading-spinner size="giant" color="8CC0DE"></app-loading-spinner><br><br>
+</div>
+<div class="flex">
+  <app-loading-spinner size="small" color="FFD24C"></app-loading-spinner><br><br>
+  <app-loading-spinner size="medium" color="FFD24C"></app-loading-spinner><br><br>
+  <app-loading-spinner size="large" color="FFD24C"></app-loading-spinner><br><br>
+  <app-loading-spinner size="giant" color="FFD24C"></app-loading-spinner><br><br>
+</div>
+<div class="flex">
+  <app-loading-spinner size="small"></app-loading-spinner><br><br>
+  <app-loading-spinner size="medium"></app-loading-spinner><br><br>
+  <app-loading-spinner></app-loading-spinner><br><br>
+  <app-loading-spinner size="giant"></app-loading-spinner><br><br>
+</div>

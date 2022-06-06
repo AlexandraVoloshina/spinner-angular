@@ -9,10 +9,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NetworkInterceptor } from './network.interceptor';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { NetworkInterceptor } from './network.interceptor';
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
