@@ -11,6 +11,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NetworkInterceptor } from './network.interceptor';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { SpinnersAngularModule } from 'spinners-angular';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
     MatProgressSpinnerModule,
     MatButtonModule,
     HttpClientModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    SpinnersAngularModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
